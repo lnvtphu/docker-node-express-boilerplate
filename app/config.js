@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8080;
  */
 async function connectToDatabase() {
   const MONGODB_URI =
-    process.env.MONGODB_URI || "mongodb://mongodb/boilerplate";
+    process.env.MONGODB_URI || "mongodb+srv://securitya:123456a@cluster0.l8pmw.mongodb.net/boilerplate?retryWrites=true&w=majority";
 
   mongoose.Promise = Promise;
   if (ENV === "development" || ENV === "test") {
